@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:id="@+id/reviewlist_item"
+    android:layout_margin="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FBF7ED"
+        >
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/reviw_title_tv"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="标题："
+            >
+        </TextView>
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/review_name_tv"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="班级加姓名:"
+            >
+        </TextView>
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/review_date_tv"
+            android:textSize="16sp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018-10-16 05:55:14.0"
+            >
+        </TextView>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

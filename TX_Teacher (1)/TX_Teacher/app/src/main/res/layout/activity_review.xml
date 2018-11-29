@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/muwen"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="tx.a316.com.tx_teacher.activites.ReviewActivity">
+        <!--垂直布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+            <!--标题栏-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#79695C"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/review_back_ll"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:background="@drawable/back" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:text="详情"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <!--输入内容-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#FBF7ED"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/reviwdetial_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="标题："
+                    android:textSize="16sp"></TextView>
+
+                <tx.a316.com.tx_teacher.widget.LineDividerTextView
+                    android:id="@+id/reviwdetial_detail_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="详细内容。。。。\nss"
+                    android:textSize="20sp"
+                    app:line_divider="@drawable/divider_gradient"
+                    app:line_divider_height="1dp"
+                    />
+                <!--轮播图-->
+                <com.youth.banner.Banner
+                    android:id="@+id/home_banner"
+                    app:title_height="25dp"
+                    app:title_background="#6611B7f5"
+                    app:title_textcolor="#ffffff"
+                    android:layout_width="match_parent"
+
+                    app:image_scale_type="fit_center"
+                    android:layout_height="180dp">
+                </com.youth.banner.Banner>
+                <TextView
+                    android:id="@+id/reviwdetial_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="right"
+                    android:text="班级加姓名:"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:id="@+id/reviwdetial_date_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="right"
+                    android:text="2018-10-16 05:55:14.0"
+                    android:textSize="16sp"></TextView>
+
+            </LinearLayout>
+            <!--隐藏的回复-->
+            <RelativeLayout
+                android:id="@+id/rl_comment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white">
+
+                <ImageButton
+                    android:id="@+id/review_voice"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:scaleType="centerInside"
+                    android:clickable="false"
+                    android:src="@drawable/yuying" />
+
+                <EditText
+                    android:id="@+id/comment_content"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:background="@null"
+                    android:hint="@string/comment_content"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/comment_send"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#79695C"
+                    android:text="@string/send"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
